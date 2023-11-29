@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -11,14 +10,6 @@ body {
 
 
 /* Navbar */
-=======
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Navbar at top */
->>>>>>> a671f0150d968a5a1a593469ff1bc543891b3845
 #navbar {
     padding: 10px;
     text-align: center;
@@ -57,7 +48,6 @@ body {
     padding: 10px;
 }
 
-<<<<<<< HEAD
 /* Dropdown menu 3x3 */
 .dropdown {
     position: relative;
@@ -116,13 +106,6 @@ body {
     text-align: center;
     padding: 10px;
     margin-top: 2%;
-=======
-/* Searchbar in the middle */
-#searchbar {
-    text-align: center;
-    padding: 10px;
-    margin-top: 15%;
->>>>>>> a671f0150d968a5a1a593469ff1bc543891b3845
 }
 
 .google-logo {
@@ -166,16 +149,11 @@ body {
     border: none;
     border-radius: 24px;
     cursor: default;
-<<<<<<< HEAD
     margin-right: 5px;
-=======
-    margin-right: 5px; /* Add spacing between buttons */
->>>>>>> a671f0150d968a5a1a593469ff1bc543891b3845
 }
 
 .search-button {
     margin-right: 0;
-<<<<<<< HEAD
 }
 
 /* Footer */
@@ -252,6 +230,4 @@ footer a {
 
 .dropdown-content-instellingen a:hover {
     background-color: #ddd;
-=======
->>>>>>> a671f0150d968a5a1a593469ff1bc543891b3845
 }
