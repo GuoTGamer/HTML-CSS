@@ -1,10 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Navbar at top */
+
+
+/* Navbar */
 #navbar {
     padding: 10px;
     text-align: center;
@@ -43,11 +48,64 @@ body {
     padding: 10px;
 }
 
-/* Searchbar in the middle */
+/* Dropdown menu 3x3 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-3x3 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: -150%;   
+    border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content-3x3 {
+    display: block;
+}
+
+.dropdown-content-3x3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-3x3 a:hover {
+    background-color: #ddd;
+}
+
+/* Dropdown menu Apps */
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.apps {
+    position: relative;
+    display: inline-block;
+    max-width: 35px;
+}
+
+/* Searchbar */
 #searchbar {
     text-align: center;
     padding: 10px;
-    margin-top: 15%;
+    margin-top: 2%;
 }
 
 .google-logo {
@@ -91,9 +149,85 @@ body {
     border: none;
     border-radius: 24px;
     cursor: default;
-    margin-right: 5px; /* Add spacing between buttons */
+    margin-right: 5px;
 }
 
 .search-button {
     margin-right: 0;
+}
+
+/* Footer */
+#footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.footer-container {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    padding: 10px;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+
+.footer-middle {
+    flex: 2;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    margin: 7px;
+}
+
+/* Dropdown menu Intellingen */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-instellingen {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: -2200%; 
+    right: -30%;   
+    border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content-instellingen {
+    display: block;
+}
+
+.dropdown-content-instellingen a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-instellingen a:hover {
+    background-color: #ddd;
 }
