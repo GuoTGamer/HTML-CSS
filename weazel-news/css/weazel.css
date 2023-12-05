@@ -1,96 +1,126 @@
 /* Theme Name: Weazel News */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: #fff;
     font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 /* Navigation */
+nav {
+    height: 100px;
+    background-color: #6A6969; /* grijze achtergrondkleur */
+}
+
 nav ul {
     background-color: #6A6969;
     font-size: 20px;
     font-style: arial-bold;
-    height: 50px;
-    list-style-type: none;
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
 nav li {
-    float: left;
+    margin-right: 20px;
+    height: 100px;
 }
 
-nav li a {
-    color: white;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
+nav a {
     text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 70px;
+    padding: 14px 16px;
+    transition: color 0.3s;
+    display: block;
+    height: 100px;
 }
 
-nav li a:hover {
-    background-color: 6A6969;
-    color: #A00B10;
-    font-style: arial-bold;
+nav a:hover {
+    color: #A00B10; /* rode tekstkleur bij hover */
 }
 
 .active {
-    background-color: #A00B10;
-    color: white;
-    font-style: arial-bold;
+    background-color: #A00B10; /* rode achtergrondkleur voor actieve link */
 }
 
+.logo-container {
+    margin-left: auto;
+}
+
+.logo {
+    float: right;
+    width: 230px; /* of een andere gewenste stijl */
+    height: auto;
+    margin-right: 60%;
+}
+
+/* footer */
 footer {
-    background-color: #f2f2f2;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
+    margin-top: auto;
+    background-color: #D3D3D3; /* lichtgrijze achtergrondkleur */
     text-align: center;
+    padding: 10px;
 }
 
-.footer-left {
-    text-align: left;
+footer a {
+    text-decoration: none;
+    color: #6A6969; /* grijze tekstkleur */
+    margin: 0 10px;
 }
 
 /* Home page */
 
+.container {
+    display: flex;
+    flex: 1;
+}
+
 section {
-    padding: 30px;
+    flex: 1; 
+}
+
+aside {
+    background-color: #CCCBCB;
+    color: white;
+    width: 20%;
+    padding: 20px;
 }
 
 .lastnews {
-    background-color: #CCCBCB;
-    color: white;
-    float: right;
-    margin-left: 50px;
-    width: 25%;
-    height: 90%;
-    display: block;
-}
-
-.laatstenieuws {
     background-color: #A00B10;
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
     text-align: center;
     display: block;
-    font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
+    padding: 14px 16px;
 }
-
 
 .kop {
-    background-color: #A00B10;
+    color: #A00B10;
+    font-weight: bold;
+    font-size: 25px;
     text-align: center;
     display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .artikel {
-    background-color: #6A6969;
+    color: #6A6969;
     display: block;
+    margin-bottom: 20px;
 }
 
 /* Nieuws page */
@@ -101,16 +131,105 @@ section {
 
 /* Contact page */
 form {
-    background-color: lightgray;
-    width: 50%;
-    max-width: 500px; /* Optioneel: beperk de maximale breedte van het formulier */
+    width: 400px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Forum page */
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
 
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
 
 /* werknemers page */
+.werknemers {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.werknemer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.naam {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.functie {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Vacatures page */
+.vacatures {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.vacature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.kop-v {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tekst-v {
+    font-style: italic;
+    margin-bottom: 10px;
+}
