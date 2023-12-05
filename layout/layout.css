@@ -1,19 +1,56 @@
 body {
-    background-color: white;
+    background-color: #FE884E;
 }
 
 nav, header, section, aside, footer {
-    background-color: #9AD2F3;
     padding: 10px;
     text-align: center;
-    border: 10px solid white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    background-color: #E57947;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: lightgray;
+    color: black;
 }
 
 section {
-    padding: 180px;
+    padding: 30px;
 }
 
 aside {
     float: right;
-    padding: 180px;
+    margin-left: 50px;
+    width: 20%;
+}
+
+footer {
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-left {
+    text-align: left;
 }
