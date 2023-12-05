@@ -136,6 +136,7 @@ form {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: left;
 }
 
 label, input, textarea {
@@ -157,6 +158,27 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+.container-midden {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: 35%;
+}
+
+.contact {
+    background-color: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -30%;
+    float: right;
 }
 
 /* werknemers page */
