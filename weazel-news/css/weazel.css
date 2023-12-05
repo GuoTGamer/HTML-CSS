@@ -1,8 +1,11 @@
+/* Theme Name: Weazel News */
+
 body {
     background-color: #fff;
     font-family: 'Arial', sans-serif;
 }
 
+/* Navigation */
 nav ul {
     background-color: #6A6969;
     font-size: 20px;
@@ -38,6 +41,21 @@ nav li a:hover {
     color: white;
     font-style: arial-bold;
 }
+
+footer {
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+/* Home page */
 
 section {
     padding: 30px;
@@ -75,15 +93,24 @@ section {
     display: block;
 }
 
-footer {
-    background-color: #f2f2f2;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
+/* Nieuws page */
+
+
+/* Contact page */
+
+
+/* Contact page */
+form {
+    background-color: lightgray;
+    width: 50%;
+    max-width: 500px; /* Optioneel: beperk de maximale breedte van het formulier */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.footer-left {
-    text-align: left;
-}
+/* Forum page */
+
+
+/* werknemers page */
