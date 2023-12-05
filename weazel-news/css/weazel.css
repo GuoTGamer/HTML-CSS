@@ -97,7 +97,7 @@ aside {
     padding: 20px;
 }
 
-.lastnews {
+.laatstenieuws {
     background-color: #A00B10;
     color: #fff;
     font-weight: bold;
@@ -124,9 +124,14 @@ aside {
 }
 
 /* Nieuws page */
-
-
-/* Contact page */
+.nieuws {
+    background-color: #CCCBCB;
+    color: white;
+    width: 50%;
+    padding: 20px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
 
 
 /* Contact page */
@@ -196,6 +201,7 @@ input[type="submit"]:hover {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    margin-right: 20px;
     width: 400px;
     padding: 20px;
     border: 1px solid #ccc;
