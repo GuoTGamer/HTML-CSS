@@ -1,0 +1,89 @@
+body {
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+nav ul {
+    background-color: #6A6969;
+    font-size: 20px;
+    font-style: arial-bold;
+    height: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: 6A6969;
+    color: #A00B10;
+    font-style: arial-bold;
+}
+
+.active {
+    background-color: #A00B10;
+    color: white;
+    font-style: arial-bold;
+}
+
+section {
+    padding: 30px;
+}
+
+.lastnews {
+    background-color: #CCCBCB;
+    color: white;
+    float: right;
+    margin-left: 50px;
+    width: 25%;
+    height: 90%;
+    display: block;
+}
+
+.laatstenieuws {
+    background-color: #A00B10;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+.kop {
+    background-color: #A00B10;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.artikel {
+    background-color: #6A6969;
+    display: block;
+}
+
+footer {
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-left {
+    text-align: left;
+}
