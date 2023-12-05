@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+}
+
+nav, header, section, aside, footer {
+    background-color: #9AD2F3;
+    padding: 10px;
+    text-align: center;
+    border: 10px solid white;
+}
+
+section {
+    padding: 180px;
+}
+
+aside {
+    float: right;
+    padding: 180px;
+}
