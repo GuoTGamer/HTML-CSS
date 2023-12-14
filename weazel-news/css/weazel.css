@@ -1,9 +1,11 @@
-/* Theme Name: Weazel News */
-body, h1, h2, h3, p, ul, li {
+/* Reset styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Global styles */
 body {
     background-color: #fff;
     font-family: 'Arial', sans-serif;
@@ -47,11 +49,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #A00B10; /* rode tekstkleur bij hover */
+    color: #A00B10;
 }
 
 .active {
-    background-color: #A00B10; /* rode achtergrondkleur voor actieve link */
+    background-color: #A00B10;
 }
 
 .logo-container {
@@ -59,7 +61,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: 90px;
-    width: 190px;   
+    width: 190px;
 }
 
 .logo {
@@ -69,29 +71,28 @@ nav a:hover {
     text-align: center;
 }
 
-/* footer */
+/* Footer */
 footer {
     margin-top: auto;
-    background-color: #D3D3D3; /* lichtgrijze achtergrondkleur */
+    background-color: #D3D3D3;
     text-align: center;
     padding: 10px;
 }
 
 footer a {
     text-decoration: none;
-    color: #6A6969; /* grijze tekstkleur */
+    color: #6A6969;
     margin: 0 10px;
 }
 
 /* Home page */
-
 .container {
     display: flex;
     flex: 1;
 }
 
 section {
-    flex: 1; 
+    flex: 1;
     margin-top: 7%;
 }
 
@@ -115,7 +116,7 @@ section {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; 
+    text-align: center;
 }
 
 .kop-hp {
@@ -157,7 +158,6 @@ aside {
     margin-bottom: 20px;
 }
 
-
 .kop-h {
     color: black;
     font-weight: bold;
@@ -184,7 +184,6 @@ aside {
     margin-bottom: 20px;
 }
 
-
 /* Contact page */
 form {
     width: 400px;
@@ -192,7 +191,6 @@ form {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    float: left;
 }
 
 label, input, textarea {
@@ -242,7 +240,7 @@ input[type="submit"]:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* werknemers page */
+/* Werknemers page */
 .werknemers {
     display: flex;
     justify-content: center;
@@ -262,7 +260,7 @@ input[type="submit"]:hover {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; 
+    text-align: center;
 }
 
 .naam {
@@ -303,7 +301,7 @@ input[type="submit"]:hover {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; 
+    text-align: center;
 }
 
 .kop-v {
@@ -317,12 +315,12 @@ input[type="submit"]:hover {
     margin-bottom: 10px;
 }
 
-/* Tabel page */
+/* Table page */
 table {
     width: 90%;
     border-collapse: collapse;
     margin-top: 5%;
-    margin-left: 5%
+    margin-left: 5%;
 }
 
 th, td {
