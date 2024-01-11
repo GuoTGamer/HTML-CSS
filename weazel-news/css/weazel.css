@@ -316,10 +316,11 @@ table {
     border-collapse: collapse;
     margin-top: 5%;
     margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 th, td {
-    border: 10px solid #6A6969;
+    border: 7px solid #6A6969;
     padding: 12px;
     text-align: left;
 }
